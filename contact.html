@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Eyaran & Nyagemi</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-brand">Eyaran & Nyagemi</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" aria-label="Toggle dark theme" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true"></span>
+        <span class="theme-label">Dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="lead">Have a question or want to work together? Send us a message below.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required aria-describedby="name-error">
+            <span id="name-error" class="error-message" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required aria-describedby="email-error">
+            <span id="email-error" class="error-message" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message (<span id="char-count">0</span> characters)</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <span id="message-error" class="error-message" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div id="form-status" class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Eyaran & Nyagemi. CSC 216 Lab Project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
