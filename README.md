@@ -6,7 +6,7 @@
 | Name | Registration no. | GitHub username |
 |------|------------------|-----------------|
 | Partner A | COM/3475/26| Eyaran |
-| Partner B | COM/5927/26 | Nyagemi |
+| Partner B | COM/5926/26 | Nyagemi |
 
 ## Who drove each part
 - Part 0, 2, 4: Partner A
