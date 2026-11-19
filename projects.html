@@ -3,63 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Eyaran & Nyagemi</title>
+  <meta name="description" content="Projects built by Team Nova while learning web development.">
+  <title>Projects | Team Nova</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <div class="header-container">
-      <a href="index.html" class="site-brand">Eyaran & Nyagemi</a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
-        <span class="hamburger"></span>
-      </button>
-
-      <nav id="site-nav" class="site-nav">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Team Nova</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html" aria-current="page">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
-      <button class="theme-toggle" aria-label="Toggle dark theme" aria-pressed="false">
-        <span class="theme-icon" aria-hidden="true"></span>
-        <span class="theme-label">Dark mode</span>
-      </button>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
     </div>
   </header>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <h1>Our Projects</h1>
-        <p class="lead">A collection of web development exercises and mini-projects built during CSC 216.</p>
+  <main id="main" class="container">
+    <header class="page-header">
+      <h1>Our projects</h1>
+      <p class="lead">Small exercises we built while learning. Filter them by technology.</p>
+    </header>
 
-        <div class="filter-controls">
-          <span class="filter-label">Filter by:</span>
-          <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-btn" data-filter="html" aria-pressed="false">HTML</button>
-          <button class="filter-btn" data-filter="css" aria-pressed="false">CSS</button>
-          <button class="filter-btn" data-filter="js" aria-pressed="false">JavaScript</button>
-        </div>
+    <div class="filters" role="group" aria-label="Filter projects by technology">
+      <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" type="button" data-filter="html" aria-pressed="false">HTML</button>
+      <button class="filter-btn" type="button" data-filter="css" aria-pressed="false">CSS</button>
+      <button class="filter-btn" type="button" data-filter="js" aria-pressed="false">JavaScript</button>
+    </div>
 
-        <p id="project-count" class="project-count" aria-live="polite"></p>
+    <p id="project-count" class="project-count" aria-live="polite"></p>
+    <div id="project-list" class="project-grid"></div>
 
-        <div id="project-list" class="grid grid-3">
-          <!-- Dynamically populated by js/script.js -->
-        </div>
-      </div>
-    </section>
+    <noscript>
+      <p>Turn on JavaScript to see the project list.</p>
+    </noscript>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Eyaran & Nyagemi. CSC 216 Lab Project.</p>
+      <p>© <span id="year">2026</span> Team Nova. Built for CSC 216.</p>
     </div>
   </footer>
-
 </body>
 </html>

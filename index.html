@@ -1,86 +1,74 @@
+index.html (complete file)
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home — Eyaran & Nyagemi</title>
+  <meta name="description" content="Team Nova: a CSC 216 web development pair.">
+  <title>Home | Team Nova</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <div class="header-container">
-      <a href="index.html" class="site-brand">Eyaran & Nyagemi</a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
-        <span class="hamburger"></span>
-      </button>
-
-      <nav id="site-nav" class="site-nav">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Team Nova</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
         <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
-      <button class="theme-toggle" aria-label="Toggle dark theme" aria-pressed="false">
-        <span class="theme-icon" aria-hidden="true"></span>
-        <span class="theme-label">Dark mode</span>
-      </button>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <div class="container">
-        <h1>Building for the web.</h1>
+        <p class="eyebrow">CSC 216 · Lab 2</p>
+        <h1>We build small things for the web.</h1>
         <p class="lead">We are two Computer Science students learning HTML, CSS and JavaScript, one page at a time.</p>
-        <a href="projects.html" class="btn btn-primary">See our projects</a>
+        <a class="button" href="projects.html">See our projects</a>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>Meet the team</h2>
-        <div class="grid grid-2">
-
-          <article class="card team-card">
-            <div class="avatar">IE</div>
-            <h3>Ian Eyaran</h3>
-            <p class="role">Structure and design</p>
-            <p>Enjoys turning rough sketches into clean, accessible layouts.</p>
-          </article>
-
-          <article class="card team-card">
-            <div class="avatar">NN</div>
-            <h3>Nyagemi Nyamwaro</h3>
-            <p class="role">Logic and interaction</p>
-            <p>Came from C and likes making pages respond to people.</p>
-          </article>
-
-        </div>
+    <section class="container section" aria-labelledby="team-heading">
+      <h2 id="team-heading">Meet the team</h2>
+      <div class="team-grid">
+        <article class="card">
+          <div class="avatar" aria-hidden="true">AW</div>
+          <h3>Ian Eyaran</h3>
+          <p class="role">Structure and design</p>
+          <p>Enjoys turning rough sketches into clean, accessible layouts.</p>
+        </article>
+        <article class="card">
+          <div class="avatar" aria-hidden="true">BO</div>
+          <h3>Nyamwaro Nyagemi</h3>
+          <p class="role">Logic and interaction</p>
+          <p>Came from C and likes making pages respond to people.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <h2>What we are learning</h2>
-        <ul class="feature-list">
-          <li><strong>HTML</strong> gives a page its structure and meaning.</li>
-          <li><strong>CSS</strong> controls how that structure looks.</li>
-          <li><strong>JavaScript</strong> makes the page respond to the user.</li>
-        </ul>
-      </div>
+    <section class="container section" aria-labelledby="learning-heading">
+      <h2 id="learning-heading">What we are learning</h2>
+      <ul class="skill-list">
+        <li><strong>HTML</strong> gives a page its structure and meaning.</li>
+        <li><strong>CSS</strong> controls how that structure looks.</li>
+        <li><strong>JavaScript</strong> makes the page respond to the user.</li>
+      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Eyaran & Nyagemi. CSC 216 Lab Project.</p>
+      <p>© <span id="year">2026</span> Team Nova. Built for CSC 216.</p>
     </div>
   </footer>
-
 </body>
 </html>
